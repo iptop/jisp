@@ -1,2 +1,7 @@
-["println" ,
-  ["string" , "hello world" ]]
+[
+  "println",
+  [
+    "string",
+    "hello world"
+  ]
+]
