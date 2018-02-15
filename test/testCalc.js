@@ -1,7 +1,7 @@
-const program= require ("./lisp/calc.json")
-const env = require("../lib/env").env
+const program= require ("./lisp/calc")
+const {createEnv} = require("../lib/env")
 const eval = require("../lib/eval").eval
-const globalEnv = env()
+const globalEnv = createEnv()
 const {initGlobalEnv}= require("../lib/init")
 initGlobalEnv(globalEnv)
 const result = eval(program,globalEnv)
