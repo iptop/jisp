@@ -1,0 +1,50 @@
+["do",
+  ["def" , "generator-fun1",
+    ["fn",
+      [],
+      ["do",
+        ["def" , "count" , 0],
+        ["fn" ,
+          [],
+          ["do",
+            ["def" , "count", ["+", 1 , "count"]  ],
+            "count"
+          ]
+        ]
+      ]
+    ]
+  ],
+
+
+
+  ["def" , "generator-fun2",
+    ["fn",
+      [],
+      ["do",
+        ["def" , "count" , 0],
+        ["fn" ,
+          [],
+          ["do",
+            ["def" , "count", ["+", 1 , "count"]  ],
+            "count"
+          ]
+        ]
+      ]
+    ]
+  ],
+
+
+
+  ["def" ,"test-fun1", ["generator-fun1"]],
+  ["def" ,"test-fun2", ["generator-fun2"]],
+
+  ["println" , ["test-fun1"]],
+  ["println" , ["test-fun1"]],
+  ["println" , ["test-fun1"]],
+
+
+  ["println" , ["test-fun2"]],
+  ["println" , ["test-fun2"]],
+  ["println" , ["test-fun2"]]
+
+]
