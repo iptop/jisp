@@ -42,9 +42,12 @@
   ["println" , ["test-fun1"]],
   ["println" , ["test-fun1"]],
 
+  ["println" , ["string" , ""]],
 
   ["println" , ["test-fun2"]],
   ["println" , ["test-fun2"]],
-  ["println" , ["test-fun2"]]
+  ["println" , ["test-fun2"]],
+
+  "count"
 
 ]
