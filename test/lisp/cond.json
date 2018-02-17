@@ -1,0 +1,15 @@
+["do",
+  ["def" , "test1" , 3],
+  ["cond",
+    [["=" ,"test1" ,1],["println" ,["string" , "test is eq 1"]] ],
+    [["=" ,"test1" ,2],["println" ,["string" , "test is eq 2"]] ],
+    [["=" ,"test1" ,3],["println" ,["string" , "test is eq 3"]] ]
+  ],
+
+  ["println",
+    ["cond",
+      [["=" ,"test1" ,1], ["string" , "test is eq 1"]],
+      [["=" ,"test1" ,2], ["string" , "test is eq 2"]],
+      ["else",["string" , "test is else"] ]]
+  ]
+]
