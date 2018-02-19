@@ -1,0 +1,40 @@
+["do",
+  ["timer",
+    ["fn",
+      [],
+      ["println",["string","timer1"]]],
+    1000
+  ],
+
+  ["timer",
+    ["fn",
+      [],
+      ["println",["string","timer2"]]],
+    2000
+  ],
+
+
+  ["def" , "timer-3" ,
+    ["timer",
+      ["fn",
+        [],
+        ["println",["string","timer3"]]],
+      3000
+    ]
+  ],
+
+  ["deleteTimer" , "timer-3"],
+
+
+
+  ["def" , "closure-var", ["string", "test"]],
+  ["timer",
+    ["fn",
+      [],
+      ["println", "closure-var" ]],
+    3000
+  ]
+
+  ,"null"
+
+]
