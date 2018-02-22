@@ -1,0 +1,3 @@
+["do",
+  ["list" , "println",["string" , "123"]]
+]
